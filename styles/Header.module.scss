@@ -1,0 +1,39 @@
+.header {
+  width: 100vw;
+  height: 84px;
+  background: #131313;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLanguages {
+    padding-left: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.language {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #737373;
+  padding-right: 10px;
+}
+.languageActive{
+  color: white;
+}
+.headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.headerLogoImg {
+  margin-right: 15px;
+}
+.headerLogoText {
+}
