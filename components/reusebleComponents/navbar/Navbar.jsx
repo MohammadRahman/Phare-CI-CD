@@ -4,11 +4,11 @@ import React, { useState } from 'react'
 import styles from '../../../styles/Navbar.module.scss'
 import { data } from './NavbarData'
 
-console.log(data)
+
 
 const Navbar = () => {
   const [active, setActive] = useState(false)
-  console.log(active)
+
 
   return (
     <div className={styles.main}>
