@@ -6,15 +6,15 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 
-import styles from '../../../styles/Logo.module.scss'
+import styles from '../../styles/Logo.module.scss'
 
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-import tipsterYellow from '../../../public/tipsterYellow.svg'
-import tipsterPurple from '../../../public/tipsterPurple.svg'
-import tipsterBlack from '../../../public/tipsterBlack.svg'
-import tipsterGrey from '../../../public/tipsterGrey.svg'
+import tipsterYellow from '../../public/tipsterYellow.svg'
+import tipsterPurple from '../../public/tipsterPurple.svg'
+import tipsterBlack from '../../public/tipsterBlack.svg'
+import tipsterGrey from '../../public/tipsterGrey.svg'
 import Link from 'next/link'
 
 const Logo = () => {

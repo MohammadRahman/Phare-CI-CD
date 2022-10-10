@@ -13,7 +13,7 @@ export const data = [
     {
       title: "Products",
       icon: heart,
-      link: "/user-page",
+      link: "/products",
     },
     {
       title: "Who we are",

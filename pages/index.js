@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/header/Header'
-import Logo from '../components/reusebleComponents/logo/Logo'
+import Logo from '../components/logo/Logo'
+// import Logo from '../components/reusebleComponents/logo/Logo'
 // import Logo from '../components/reusebleComponents/Logo'
 import styles from '../styles/Home.module.scss'
 1

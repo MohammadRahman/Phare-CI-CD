@@ -1,0 +1,127 @@
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+.productsItems {
+  display: flex;
+  height: 572px;
+}
+.productsLeftSide {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+.productsLeftSide__btn {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 47px;
+  padding: 13px 100px 14px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(244, 255, 197, 0.16) 0%,
+    rgba(244, 255, 197, 0) 100%
+  );
+  border-radius: 12px 0px 0px 12px;
+  &:hover {
+    background: #a0a298;
+  }
+  // &:active {
+  //   background: #f4ffc5;
+  //   color: #131313;
+  // }
+}
+.productsInfoActive{
+  background: #f4ffc5;
+    color: #131313;
+
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 47px;
+    padding: 13px 100px 14px 30px;
+    
+    border-radius: 12px 0px 0px 12px;
+}
+.LeftSide__imgBox {
+  margin-right: 22px;
+}
+.LeftSide__text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+}
+
+.productsRightSide {
+  background: #f4ffc5;
+  border-radius: 12px;
+  width: 50%;
+  height: 573px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 40px 0 40px;
+  .productsRightSide__imgBox {
+    margin-bottom: 30px;
+  }
+  .productsRightSide__text {
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
+  .productsRightSide__textDecor {
+    &::before {
+      content: '';
+      display: inline-block;
+
+      align-items: center;
+      width: 5px;
+      height: 5px;
+      background: #000;
+      border-radius: 50%;
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+  }
+}
+.rightSide__secondBoxTextBoldTitle {
+  color: #000;
+  // padding: 60px 80px;
+  padding: 20px 80px 60px 80px;
+  font-weight: 700;
+  font-size: 16px;
+
+  color: #000000;
+}
+.productsRightSide__imgSecond {
+  display: flex;
+}
+
+.rightSide__secondBox {
+  padding: 0 35px;
+
+  .rightSide__secondBoxTextBold {
+    font-weight: 700;
+    margin: 40px 0;
+    color: #000;
+  }
+  p {
+    margin-bottom: 5px;
+    color: #000;
+  }
+}
+.imgBox {
+  display: flex;
+  .imgInner {
+    margin-right: 30px;
+  }
+}
