@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.scss'
 1
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+//should through an error on push
 export default function Home() {
   return (
     <div className={styles.home}>
