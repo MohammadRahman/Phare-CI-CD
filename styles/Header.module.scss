@@ -10,11 +10,10 @@
 }
 
 .headerLanguages {
-    padding-left: 60px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .language {
@@ -24,13 +23,13 @@
   color: #737373;
   padding-right: 10px;
 }
-.languageActive{
+.languageActive {
   color: white;
 }
 .headerLogo {
-    display: flex;
-    align-items: center;
-    justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .headerLogoImg {
   margin-right: 15px;

@@ -5,8 +5,8 @@ import Logo from '../components/logo/Logo'
 // import Logo from '../components/reusebleComponents/Logo'
 import styles from '../styles/Home.module.scss'
 1
-// import 'bootstrap/dist/css/bootstrap.min.css';  
-// import 'bootstrap/dist/css/bootstrap.min.css';    
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
@@ -17,10 +17,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* <script src="https:code.jquery.com/jquery-3.4.1min.js"/> */}
       </Head>
-      <Header/>
+      <Header />
 
-      <Logo/>
-     
+      <Logo />
     </div>
   )
 }

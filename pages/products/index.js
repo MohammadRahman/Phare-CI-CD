@@ -4,7 +4,7 @@ import ProductsInfo from './productsInfo'
 const Products = () => {
   return (
     <div>
-        <ProductsInfo/>
+      <ProductsInfo />
     </div>
   )
 }

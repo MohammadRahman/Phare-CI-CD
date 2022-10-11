@@ -4,23 +4,17 @@ import React, { useState } from 'react'
 import styles from '../../../styles/Navbar.module.scss'
 import { data } from './NavbarData'
 
-
-
 const Navbar = () => {
   const [active, setActive] = useState(false)
 
-
   return (
     <div className={styles.main}>
-  
-        <div className={styles.wrapper}>
+      <div className={styles.wrapper}>
+        <div className={styles.hamburgerBox} onClick={() => setActive(!active)}>
           <div
-            className={styles.hamburgerBox}
-            onClick={() => setActive(!active)}
-          >
-            <div className={active ? styles.activeHamburger : styles.hamburger}></div>
-          </div>
-       
+            className={active ? styles.activeHamburger : styles.hamburger}
+          ></div>
+        </div>
       </div>
 
       <div className={active ? styles.activeNavbar : styles.navbar}>
@@ -42,8 +36,9 @@ const Navbar = () => {
                     height={20}
                   />
                 </div>
-                <Link href={item.link}><a className={styles.navbarItemsLink}>{item.title}</a></Link>
-
+                <Link href={item.link}>
+                  <a className={styles.navbarItemsLink}>{item.title}</a>
+                </Link>
               </li>
             )
           })}

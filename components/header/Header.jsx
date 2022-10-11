@@ -12,9 +12,9 @@ const Header = () => {
       <div className={styles.headerContainer}>
         <div className={styles.headerLanguages}>
           <Link href="/">
-            <a className={`${styles.language} ${styles.languageActive}`} >Eng</a>
+            <a className={`${styles.language} ${styles.languageActive}`}>Eng</a>
           </Link>
-          <Link  href="/">
+          <Link href="/">
             <a className={styles.language}>Fra</a>
           </Link>
           <Link href="/">

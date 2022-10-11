@@ -1,19 +1,17 @@
-
-.main{
+.main {
   margin-right: 60px;
   padding: 30px 0;
 }
 .wrapper {
-  
 }
-.hamburgerBox{
-    width: 37px;
-    height: 37px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
+.hamburgerBox {
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
 }
 .hamburger {
   width: 30px;
@@ -24,7 +22,6 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgb(255, 101, 47, 0.2);
   transition: all 0.5s ease-in-out;
-  
 
   &:before {
     content: '';
@@ -60,7 +57,7 @@
 
   &:before {
     content: '||||';
-    color:transparent;
+    color: transparent;
     width: 30px;
     height: 5px;
     position: absolute;
@@ -69,10 +66,10 @@
     transition: all 0.5s ease-in-out;
     transform: rotate((45deg));
   }
-  
+
   &:after {
     content: '||||';
-    color:transparent;
+    color: transparent;
     width: 30px;
     height: 5px;
     position: absolute;
@@ -81,27 +78,26 @@
     transition: all 0.5s ease-in-out;
     transform: rotate((-45deg));
   }
-  
 }
 
-.linkItems{
-    color: white;
+.linkItems {
+  color: white;
 }
 
-.navbar{
-  color:white;
+.navbar {
+  color: white;
   position: fixed;
   right: 0;
   top: 0;
-  width:340px;
+  width: 340px;
   height: 70%;
   background-color: transparent;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-.activeNavbar{
-  color:white;
+.activeNavbar {
+  color: white;
   position: fixed;
   right: 0;
   top: 0;
@@ -111,24 +107,21 @@
   transform: translateX(0);
   transition: all 0.3s ease-in-out;
   box-shadow: rgba(137, 159, 26, 0.56) 0px 22px 70px 4px;
-  border-radius:2px;
-  
+  border-radius: 2px;
 }
-.navbarItems{
+.navbarItems {
   padding-top: 30%;
-
 }
-.navbarItem{
+.navbarItem {
   display: flex;
   align-items: center;
   padding-left: 29%;
-    padding-top: 43px;
-  
+  padding-top: 43px;
 }
-.sidebarWrapperImg{
+.sidebarWrapperImg {
   margin-right: 20px;
 }
-.navbarItemsLink{
+.navbarItemsLink {
   color: white;
   font-size: 20px;
   line-height: 30px;

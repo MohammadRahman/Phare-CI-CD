@@ -5,44 +5,41 @@
   left: 25%;
   top: 30%;
   .logoWrapper {
-  position: relative;
-  width: 800px;
+    position: relative;
+    width: 800px;
 
-  .logoCircle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+    .logoCircle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
 
-  background-color: rgb(32, 31, 31);
-  border-radius: 50%;
-  width: 540px;
-  height: 540px;
+      background-color: rgb(32, 31, 31);
+      border-radius: 50%;
+      width: 540px;
+      height: 540px;
 
-  .owl-carousel{
+      .owl-carousel {
+      }
+      .owl-theme {
+        .item {
+          text-align: center;
+          padding: 50px;
+          margin-bottom: 0px;
+          opacity: 0.2;
+          transform: scale3d(0.8, 0.8, 1);
+          transition: all 0.3s ease-in-out;
 
+          .item {
+            width: 238px;
+            height: 227px;
+            margin: 0 30px;
+          }
+        }
+      }
+    }
   }
-  .owl-theme{
-.item {
-  text-align: center;
-  padding: 50px;
-  margin-bottom: 0px;
-  opacity: 0.2;
-  transform: scale3d(0.8, 0.8, 1);
-  transition: all 0.3s ease-in-out;
-
-  .item{
-  width:238px;
-  height: 227px;
-  margin: 0 30px;
 }
-}
-  }
-}
-
-}
-}
-
 
 .logoItems {
   position: absolute;
@@ -96,15 +93,12 @@
   cursor: pointer;
 }
 
-
-
-.owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
   display: block;
 }
 
-
-
 .owl-item .active .center {
   opacity: 1;
-  transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1, 1, 1);
 }

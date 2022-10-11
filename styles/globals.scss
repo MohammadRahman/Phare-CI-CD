@@ -52,7 +52,6 @@ input::-ms-clear {
   display: none;
 }
 
-
 a,
 a:visited {
   text-decoration: none;
@@ -76,7 +75,7 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-button{
+button {
   padding: 0;
   border: none;
   font: inherit;
@@ -90,13 +89,12 @@ button{
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 25px !important;
-  right: 260px!important;
+  right: 260px !important;
   color: white;
 }
 
 .swiper-button-next {
   right: 260px !important;
-  
 }
 .swiper-button-prev {
   left: 284px !important;

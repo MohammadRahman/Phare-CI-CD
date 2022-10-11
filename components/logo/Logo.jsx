@@ -135,7 +135,6 @@ const Logo = () => {
             Learn more
           </a>
         </Link>
-        
       </div>
     </div>
   )
