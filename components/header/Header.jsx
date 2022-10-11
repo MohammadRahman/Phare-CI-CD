@@ -1,10 +1,10 @@
-import React from 'react'
-import Navbar from '../reusebleComponents/Navbar/Navbar'
-import styles from '../../styles/Header.module.scss'
-import logoImg from '../../public/logo.svg'
-import Image from 'next/image'
-import Link from 'next/link'
-import logoText from '../../public/logoText.svg'
+import React from 'react';
+import Navbar from '../reusebleComponents/Navbar/Navbar';
+import styles from '../../styles/Header.module.scss';
+import logoImg from '../../public/logo.svg';
+import Image from 'next/image';
+import Link from 'next/link';
+import logoText from '../../public/logoText.svg';
 
 const Header = () => {
   return (
@@ -30,7 +30,7 @@ const Header = () => {
         <Navbar />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
