@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: "16.x"
       - run: npm ci   #install
-      - run: npm code:check
+      - run: npm run code:check
         # run tests if you have
       # - run: npm test -- --coverage
       #   env:
