@@ -4,20 +4,34 @@ on:
     branches:
       - main
 jobs:
-  lintTest:
-    name: Lint
+  # lintTest:
+  #   name: Lint
+    # runs-on: ubuntu-latest
+    # steps:
+    #   - name: Clone Repo
+    #     uses: actions/checkout@v2
+    #   - name: Installing Dependencies
+    #     run: |
+    #       echo "Running installing dependencies"
+    #       npm install
+    #   - name: Run linting
+    #     run: |
+    #       echo "Running linting tests"
+    #       npm run lint
+    #     env:
+    #       CI: true
+  securityCheck:
+    name: Security-Check
     runs-on: ubuntu-latest
     steps:
-      - name: Clone Repo
-        uses: actions/checkout@v2
-      - name: Installing Dependencies
+      - name: chcek for security
         run: |
-          echo "Running installing dependencies"
-          npm install
-      - name: Run linting
-        run: |
-          echo "Running linting tests"
-          npm run lint
-        env:
-          CI: true
+          echo "run security checks"
+          sleep 5s;
+          echo "run security checks..1"
+          sleep 5s;
+          echo "run security checks..2"
+          sleep 5s;
+          echo "run security checks..3"
+          sleep 5s;
 
