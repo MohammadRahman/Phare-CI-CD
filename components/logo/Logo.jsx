@@ -1,39 +1,39 @@
-import { Navigation } from 'swiper'
+import { Navigation } from 'swiper';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-import styles from '../../styles/Logo.module.scss'
+import styles from '../../styles/Logo.module.scss';
 
-import React, { useState } from 'react'
-import Image from 'next/image'
+import React, { useState } from 'react';
+import Image from 'next/image';
 
-import tipsterYellow from '../../public/tipsterYellow.svg'
-import tipsterPurple from '../../public/tipsterPurple.svg'
-import tipsterBlack from '../../public/tipsterBlack.svg'
-import tipsterGrey from '../../public/tipsterGrey.svg'
-import Link from 'next/link'
+import tipsterYellow from '../../public/tipsterYellow.svg';
+import tipsterPurple from '../../public/tipsterPurple.svg';
+import tipsterBlack from '../../public/tipsterBlack.svg';
+import tipsterGrey from '../../public/tipsterGrey.svg';
+import Link from 'next/link';
 
 const Logo = () => {
-  const [currentImage, setCurrentImage] = useState(tipsterYellow)
+  const [currentImage, setCurrentImage] = useState(tipsterYellow);
 
   const [images, setImages] = useState([
     tipsterYellow,
     tipsterPurple,
     tipsterBlack,
-    tipsterGrey,
-  ])
+    tipsterGrey
+  ]);
 
   const handleChangeTipsterColor = (clickedIdBtn) => {
     images.map((item, i) => {
       if (clickedIdBtn.currentTarget.id == i) {
-        setCurrentImage(item)
+        setCurrentImage(item);
       }
-    })
-  }
+    });
+  };
 
   return (
     <div className={styles.logo}>
@@ -137,7 +137,7 @@ const Logo = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

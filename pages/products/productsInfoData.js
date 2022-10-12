@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const ProductsInfoData = () => {
-  const [data, setData] = useState([{}])
+  const [data, setData] = useState([{}]);
 
-  return <div>{}</div>
-}
+  return <div>{}</div>;
+};
 
-export default ProductsInfoData
+export default ProductsInfoData;
