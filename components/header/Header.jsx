@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../styles/Header.module.scss';
-import Navbar from '../reusebleComponents/Navbar/Navbar';
+import Navbar from '../reusebleComponents/navbar/Navbar';
 import logoImg from '../../public/logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
