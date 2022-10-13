@@ -18,4 +18,7 @@ jobs:
          node-version: ${{ matrix.node-version }}
      - run: npm ci
      - run: npm run code:check
+     - name: Build Project
+       if: github.event_name == 'push'
+       run: npm run build
        
