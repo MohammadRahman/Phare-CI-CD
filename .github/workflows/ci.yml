@@ -7,9 +7,6 @@ on:
 jobs:
   build:
    runs-on: ubuntu-latest
-   strategy:
-     matrix:
-       node-version: [16.x]
    steps:
      - uses: actions/checkout@v2
      - name: Use NodeJS
@@ -18,7 +15,4 @@ jobs:
          node-version: ${{ matrix.node-version }}
      - run: npm ci
      - run: npm run code:check
-     - name: Build
-       if: github.event_name == 'push'
-     - run: npm run build
        
