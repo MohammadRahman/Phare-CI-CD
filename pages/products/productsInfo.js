@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import React, { useState } from 'react'
-import styles from '../../styles/ProductsInfo.module.scss'
+import Image from 'next/image';
+import React, { useState } from 'react';
+import styles from '../../styles/ProductsInfo.module.scss';
 
 const ProductsInfo = () => {
   const [btnColorActive, setBtnColorActive] = useState([
@@ -8,27 +8,27 @@ const ProductsInfo = () => {
     true,
     true,
     true,
-    true,
-  ])
-  const [productsInfo, setProductsInfo] = useState('1')
+    true
+  ]);
+  const [productsInfo, setProductsInfo] = useState('1');
 
-  const dataInfo = ['1']
+  const dataInfo = ['1'];
 
   const handleChangeProductsInfo = (id) => {
-    setProductsInfo(id.currentTarget.id)
+    setProductsInfo(id.currentTarget.id);
 
     // code to change bntActive color
-    const active = Number(id.currentTarget.id)
-    const newBtnArr = []
+    const active = Number(id.currentTarget.id);
+    const newBtnArr = [];
     btnColorActive.map((item, i) => {
-      item = true
+      item = true;
       if (i + 1 === active) {
-        item = false
+        item = false;
       }
-      newBtnArr.push(item)
-      setBtnColorActive(newBtnArr)
-    })
-  }
+      newBtnArr.push(item);
+      setBtnColorActive(newBtnArr);
+    });
+  };
   return (
     <>
       <div className={styles.products}>
@@ -167,14 +167,14 @@ const ProductsInfo = () => {
                       </div>
                       <p className={styles.productsRightSide__text}>
                         By 2025, it is expected that IoT devices will generate
-                        roughly 73.1 ZB of data. That's roughly 4x the 18.3 ZB
+                        roughly 73.1 ZB of data. That is roughly 4x the 18.3 ZB
                         generated in 2019. With all this data, the use of AI and
                         machine learning will be essential. Because of this,
                         Gartner expects that over 80% of IoT initiatives will be
                         paired with AI by the end of 2022.
                       </p>
                     </div>
-                  )
+                  );
                 } else if (productsInfo === '2') {
                   return (
                     <div
@@ -231,7 +231,7 @@ const ProductsInfo = () => {
                         </div>
                       </div>
                     </div>
-                  )
+                  );
                 } else if (productsInfo === '3') {
                   return (
                     <div
@@ -279,7 +279,7 @@ const ProductsInfo = () => {
                         </p>
                       </div>
                     </div>
-                  )
+                  );
                 } else if (productsInfo === '4') {
                   return (
                     <div
@@ -315,7 +315,7 @@ const ProductsInfo = () => {
                         </p>
                       </div>
                     </div>
-                  )
+                  );
                 } else if (productsInfo === '5') {
                   return (
                     <div
@@ -350,7 +350,7 @@ const ProductsInfo = () => {
                         </p>
                       </div>
                     </div>
-                  )
+                  );
                 }
               })}
             </div>
@@ -358,7 +358,7 @@ const ProductsInfo = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductsInfo
+export default ProductsInfo;

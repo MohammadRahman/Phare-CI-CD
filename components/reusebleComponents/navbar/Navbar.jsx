@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useState } from 'react'
-import styles from '../../../styles/Navbar.module.scss'
-import { data } from './NavbarData'
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import styles from '../../../styles/Navbar.module.scss';
+import { data } from './NavbarData';
 
 const Navbar = () => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
 
   return (
     <div className={styles.main}>
@@ -40,12 +40,12 @@ const Navbar = () => {
                   <a className={styles.navbarItemsLink}>{item.title}</a>
                 </Link>
               </li>
-            )
+            );
           })}
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

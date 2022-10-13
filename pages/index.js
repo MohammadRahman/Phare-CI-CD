@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Header from '../components/header/Header'
-import Logo from '../components/logo/Logo'
+import Head from 'next/head';
+import Header from '../components/header/Header';
+import Logo from '../components/logo/Logo';
 // import Logo from '../components/reusebleComponents/logo/Logo'
 // import Logo from '../components/reusebleComponents/Logo'
-import styles from '../styles/Home.module.scss'
-1
+import styles from '../styles/Home.module.scss';
+1;
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 //should through an error on push
@@ -21,5 +21,5 @@ export default function Home() {
 
       <Logo />
     </div>
-  )
+  );
 }
