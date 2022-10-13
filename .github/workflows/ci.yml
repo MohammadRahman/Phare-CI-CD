@@ -9,7 +9,7 @@ jobs:
    runs-on: self-hosted
    strategy:
      matrix:
-       node-version: [16x]
+       node-version: [12x]
    steps:
      - uses: actions/checkout@v2
      - name: Use NodeJS
