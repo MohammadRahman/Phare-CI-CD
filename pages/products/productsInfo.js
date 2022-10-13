@@ -167,7 +167,7 @@ const ProductsInfo = () => {
                       </div>
                       <p className={styles.productsRightSide__text}>
                         By 2025, it is expected that IoT devices will generate
-                        roughly 73.1 ZB of data. That's roughly 4x the 18.3 ZB
+                        roughly 73.1 ZB of data. That is roughly 4x the 18.3 ZB
                         generated in 2019. With all this data, the use of AI and
                         machine learning will be essential. Because of this,
                         Gartner expects that over 80% of IoT initiatives will be

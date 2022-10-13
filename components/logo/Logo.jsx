@@ -20,7 +20,7 @@ import Link from 'next/link';
 const Logo = () => {
   const [currentImage, setCurrentImage] = useState(tipsterYellow);
 
-  const [images, setImages] = useState([
+  const [images] = useState([
     tipsterYellow,
     tipsterPurple,
     tipsterBlack,
