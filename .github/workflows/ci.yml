@@ -4,22 +4,20 @@ on:
     branches: [develop]
   push:
     branches: [develop]
-    
 jobs:
   build:
-
-    runs-on: self-hosted
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v3
+     - name: Use NodeJs
+       uses: actions/setup-node@v3
+       with:
+         node-version: '16x'
+     - run: npm ci # ci is replace of install, and it's recomended
+     - run: npm run code:check
+        # tests sections goes here
+    #  - run: npm test -- --coverage
+    #    env:
+    #      CI: true
+       
+      
