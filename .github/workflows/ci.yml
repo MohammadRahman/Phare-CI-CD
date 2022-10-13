@@ -10,9 +10,9 @@ jobs:
    steps:
      - uses: actions/checkout@v2
      - name: Use NodeJs
-       uses: actions/setup-node@v2
+       uses: actions/setup-node@v1
        with:
-         node-version: '16x'
+         node-version: '12x'
      - run: npm ci # ci is replace of install, and it's recomended
      - run: npm run code:check
         # tests sections goes here
