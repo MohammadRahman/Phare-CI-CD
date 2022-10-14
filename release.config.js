@@ -1,5 +1,5 @@
 module.exports = {
-    branches: "master",
+    branches: "main",
     repositoryUrl: 'https://github.com/MohammadRahman/Phare-CI-CD',
     plugins: [
         '@semantic-release/commit-analyzer',
