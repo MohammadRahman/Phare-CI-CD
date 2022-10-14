@@ -28,8 +28,9 @@ jobs:
          aws-secret-access-key: UN3TaHOvoadZxK+Y1m6d1HkWx36egdh4FSGQ9nhI
          aws-region:  eu-central-1 #us-east-1
      - name: Copy files to the staging website with the AWS CLI
+       if: github.event_name == 'push'
        run: |
-        aws s3 sync out/ s3://phare-web
+        aws s3 sync ./out s3://phare-web
 
 
 
