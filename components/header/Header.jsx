@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logoText from '../../public/logoText.svg';
 
-
 const Header = () => {
   return (
     <div className={styles.header}>
