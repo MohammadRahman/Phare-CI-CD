@@ -20,6 +20,9 @@ const Header = () => {
           <Link href="/">
             <a className={styles.language}>Ger</a>
           </Link>
+          <Link href="/">
+            <a className={styles.language}>Test</a>
+          </Link>
         </div>
         <div className={styles.headerLogo}>
           <div className={styles.headerLogoImg}>
@@ -32,5 +35,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;
