@@ -6,7 +6,7 @@ on:
     branches: [develop]
 jobs:
   build:
-   runs-on: ubuntu-latest
+   runs-on: ubuntu-latest 
    strategy:
      matrix:
        node-version: [16.x]
@@ -27,9 +27,9 @@ jobs:
          aws-access-key-id: AKIA4IPKHFOEDL3CSQE2
          aws-secret-access-key: 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
          aws-region: eu-central-1 #us-east-1
-     - name: Copy files to the production website with the AWS CLI
+     - name: Copy files to the staging website with the AWS CLI
        run: |
-        aws s3 sync out s3://phare-web
+        aws s3 sync --delete out s3://phare-web
 
 
 
